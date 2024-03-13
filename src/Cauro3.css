@@ -1,0 +1,11 @@
+/* styles.css */
+
+.under {
+    border-bottom: 2px solid transparent; /* Initial state - invisible underline */
+    transition: border-color 0.3s ease; /* Smooth transition for underline */
+  }
+  
+  .navbar-nav .nav-link:hover under {
+    border-color: black; /* Show underline on hover */
+  }
+  

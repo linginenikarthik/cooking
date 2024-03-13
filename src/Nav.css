@@ -1,0 +1,148 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+.navbar-nav .nav-item .nav-link {
+  color:white;
+  position: relative; /* Add position relative to create a reference for the pseudo-element */
+}
+
+/* Style for the underline */
+.navbar-nav .nav-item .nav-link::after{
+  content: ''; /* Create a pseudo-element */
+  position: absolute; /* Position it absolutely */
+  bottom: 0; /* Align at the bottom */
+  left: 0; /* Align at the left */
+  width: 100%; /* Full width */
+  height: 3px; /* Height of the underline */
+  /* background: linear-gradient(rgba(100, 200, 300), rgba(400, 100, 500)); Gradient background */ 
+  transition: all 0.3s ease; /* Smooth transition for underline */
+  opacity: 0; /* Initially invisible */
+  background-color:white;
+  
+  
+}
+
+/* Show the underline on hover */
+.navbar-nav .nav-item .nav-link:hover::after{
+  opacity: 1; /* Make the underline visible on hover */
+ 
+ 
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: chartreuse;
+ font-size: 20px;
+ text-shadow: 2px 2px black;
+  font-family: italic;
+} 
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-fluid img {
+  max-width: 100px; /* Adjust width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* .under {
+  width: 25px;
+  height: 3px;
+  background: linear-gradient(rgba(100, 200, 300), rgba(400, 100, 500)); */
+  /* display: none; /* Initially hiding the underline 
+} */
+
+/* .navbar-nav .nav-item .nav-link:hover::.under { 
+  display: block;  Display the underline when hovering 
+/* } */
+.navbar-nav .nav-item {
+  position: relative; /* Position relative for parent */
+  
+}
+
+.bran {
+  width: 250px;
+  background-color: olivedrab;
+  position: absolute;
+  display: none;
+  top: calc(100% + 5px); /* Position below the nav item */
+  left: 50%; /* Position the left of the .bran container at 50% of the parent */
+transform: translateX(-50%); 
+  padding: 10px;
+  color: white;
+  
+
+}
+.bran h6{
+  margin-top: 20px;
+  text-align: justify;
+  
+}
+
+.nav-item:hover .bran {
+  display: block; /* Show the .bran container on hover */
+
+}
+.mang{
+  background-color: olivedrab;
+  position: absolute;
+  width: 150px;
+  left: 50%; /* Position the left of the .bran container at 50% of the parent */
+transform: translateX(-50%); 
+  padding: 10px;
+  color: white;
+  display: none;
+}
+.nav-item:hover .mang{
+  display: block;
+}
+
+.content{
+  height: 300px;
+  margin-top: 10%;
+  left: 50%;
+  text-align: justify;
+  padding:60px;
+  margin-bottom: 100px;
+  word-spacing:10px ;
+  line-height: 45px;
+}
+.carousel-inner .carousel-item .d-block{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+
+}
+.navbar-toggler-icon{
+  color: green;
+}
+.navbar-toggler{
+  color: green;
+  background-color: azure;
+}
+.collapse{
+  /* background-color: rgba(248, 248, 77, 0.402); */
+color: black;
+background: transparent !important;
+}
+
+@media screen and (max-width:768px){
+  .collapse{
+    height:100% !important;
+    background-color: green !important;
+    opacity: 0.5;
+   
+  
+  }
+  
+}
