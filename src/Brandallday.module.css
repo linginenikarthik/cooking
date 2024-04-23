@@ -1,0 +1,95 @@
+ .conbr{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 2px dotted orange;
+    background-color: olive;
+    position: relative;
+    
+} 
+.opt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid red;
+    padding: 20px;
+    /* top: 30px; */
+}
+.opt h6{
+    color: white;
+}
+.opt h6:hover{
+    color: black;
+}
+.bt button  {
+color: white;
+background:transparent
+}
+.bt button:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius:10px ;
+    width: 70px;
+}
+ .carousel{
+    width: 100%;
+    height: auto;
+    border: 2px solid indigo    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carouselindicators{
+    border: 2px solid green;
+}
+ .carousel .carouselindicators button{
+    border-radius: 100%;
+    height: 2vh;
+    border: 2px dotted orange;
+    background-color:burlywood;
+    
+}
+.carouselcontrolprev{
+    border: 2px dotted rgb(169, 8, 184);
+    
+}
+.carouselcontrolprev .carouselcontrolprevicon{
+    border: 2px double  rgb(169, 8, 184);
+    color: black;
+    background-color: blueviolet;
+    
+}
+.carouselcontrolprev .carouselcontrolprevicon .visuallyhidden{
+    color: black;
+    background-color: blueviolet;
+} 
+.carouselslide{
+    width: 70%;
+    height: auto;
+    border: 2px solid yellow;
+    
+}
+.carouselslide .carouselitem .d-block{
+    width: 100%;
+    height: auto;
+    border: 2px dotted orangered;
+}
+ /* .conbr{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    
+    
+}
+.conbr .carouselslide{
+    width: 50%;
+    height: 100%;
+    border: 2px solid green;
+} 
+.carouselindicators{
+    border: 2px solid orange;
+} */

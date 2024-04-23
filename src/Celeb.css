@@ -1,0 +1,43 @@
+.maincon2{
+    background-color: olive;
+    width: 100%;
+    height: auto;   
+    border: 2px solid red;
+    position: relative;
+}
+.maincon2 .maincon21{
+    width: 50%;
+    height: 90vh;
+    border: 2px solid orange;
+    margin: 50px;
+    
+    
+}
+.maincon21 img{
+    width: 100%;
+    height: 100%;
+}
+.sc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circon2{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    width: 50%;
+}
+.gt{
+    right: 10%;
+    position: absolute;
+    top: 50%;
+    font-size:60px;
+}
+.lt{
+    left: 10%;
+    position: absolute;
+    top: 50%;
+    font-size:60px;
+}

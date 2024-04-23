@@ -3,6 +3,16 @@
   padding: 0px;
   outline: none;
 }
+.navbar{
+  --bs-navbar-padding-x: 0.8;
+}
+.navbar .container-fluid{
+  /* position:relative; */
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+}
 .navbar-nav .nav-item .nav-link {
   color:white;
   position: relative; /* Add position relative to create a reference for the pseudo-element */
@@ -37,11 +47,13 @@
   font-family: italic;
 } 
 
-.container-fluid {
+/* .container-fluid {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
+
+} */
 
 .container-fluid img {
   max-width: 100px; /* Adjust width of the logo */
@@ -84,8 +96,8 @@ transform: translateX(-50%);
 
 }
 .bran h6{
-  margin-top: 20px;
-  text-align: justify;
+  /* margin-top: 20px; */
+  /* text-align: justify; */
   
 }
 
@@ -135,7 +147,16 @@ transform: translateX(-50%);
 color: black;
 background: transparent !important;
 }
+.bran .obm{
+  width: 250px;
+}
+.obm:hover{
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding:5px;
 
+}
 @media screen and (max-width:768px){
   .collapse{
     height:100% !important;
