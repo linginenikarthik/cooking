@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route ,Routes} from 'react-router-dom'
+import { HashRouter, Route ,Routes} from 'react-router-dom'
 import Management from './Management'
 import Brands from './Brands'
 import Home from './Home'
@@ -21,7 +21,7 @@ function App() {
   }
   
   return (
-   <BrowserRouter>
+   <HashRouter>
    {f && <Nav/>}
    <Routes>
     <Route path="/" element={<Home/>}></Route>
@@ -35,8 +35,8 @@ function App() {
     <Route path='/Brandallday2' element={<Brandallday2 upd={upd}/>}></Route>
     <Route path='/Brands/Celeb' element={<Celebs upd={upd}/>}></Route>
        </Routes>
-   </BrowserRouter>
+   </HashRouter>
   )
 }
-
+ 
 export default App
